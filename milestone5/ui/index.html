@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="libs/jquery-validate/jquery-validate.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="libs/jquery-ui/js/jquery-ui-1.10.0.custom.min.js"></script>
+        
+        <script src="src/index.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"></script>
+        <link rel="stylesheet" type="text/css" href="libs/jquery-ui/css/ui-lightness/jquery-ui-1.10.0.custom.min.css"></script>
+    </head>
+    
+    <body bgcolor="#000000">
+
+        <div class="well">
+            <h1>
+                fill the orders
+            </h1>
+            <form>
+                <div class="control-group input-append">
+                    <input type="text" id="name" name="name" data-required/>
+                    <label for="name" class="add-on"><span class="icon-asterisk"></span>Name</label>
+                </div>
+                <div class="control-group input-append">
+                    <input type="text" id="country" name="country" data-required/>
+                    <label for="country" class="add-on"><span class="icon-asterisk"></span>addresss</label>
+                </div>
+                <div class="control-group input-append">
+                    <input type="text" id="birthday" name="birthday" data-required/>
+                    <label for="birthday" class="add-on"><span class="icon-asterisk"></span>Receiving date</label>
+                </div>
+
+<label for="name" class="add-on"><span class="icon-asterisk"></span>around receiving time</label>
+<form id="form" action="/query!query.action">  
+    <select name="hour" id="hour">      
+        <option value ="" >9:00am</option>  
+        <option value ="1" >11:am</option>  
+        <option value ="2">1:00pm</option>  
+        <option value ="3">3:00pm</option>
+	<option value ="4">5:00pm</option>   
+	<option value ="5">7:00pm</option>    
+	<option value ="6">9:00pm</option>   
+    </select>     
+ 
+</form> 
+                <div class="control-group input-append">
+                    <label class="checkbox">
+                        <input type="checkbox" id="send-email" name="send-email"/>  Email Me to comfirm order
+                    </label>
+                </div>
+                <div class="control-group input-append" id="email-info" >
+                    <input type="text" id="email" name="email"/>
+                    <label for="email" class="add-on"><span class="icon-asterisk"></span>Email</label>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
