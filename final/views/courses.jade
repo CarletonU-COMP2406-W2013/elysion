@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  #wrapper
+    #logo
+      img(src='/images/h.png')
+      img(src='/images/menu1.JPG')
+
+    #display
+      include userbarNoBack
+      br
+      | lunch: 18$ person (11:am to 2 pm)
+      br
+      | dinner:#{school}
+      
+        
+      -for (var id in items)
+        - var item = items[id]
+        div
+         br 
+         a(href='/item/#{id}') #{item.name} - #{item.code}
+
+ 
+    include footer

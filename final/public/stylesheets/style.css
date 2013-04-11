@@ -1,0 +1,26 @@
+body {
+  background-color: #ebe9dc;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0069ff;
+}
+#wrapper {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+  background-color: #ebe9dc;
+}
+#logo {
+  text-align: center;
+}
+#display {
+  margin: 20px 0 50px;
+  background-color: #ebe9dc;
+}
+#userbar {
+  margin-bottom: 20px;
+}

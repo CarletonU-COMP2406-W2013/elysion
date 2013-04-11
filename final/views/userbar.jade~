@@ -1,0 +1,11 @@
+#userbar
+  | Welcome 
+  b #{username} 
+  | |
+  b #{school}  
+  | |
+  a(href='/courses') Back to courses 
+  | |   
+  a(href='/logout') Log Out
+  | |  
+  a(href='/Add Courses') add course

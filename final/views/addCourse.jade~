@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  #wrapper
+    #logo
+      a(href='/')
+        img(src='/images/test2.png')
+    
+    #display
+   a(href='/courses') Back to courses      
+       
+       #addCourse 
+       form(method='post')
+          | Enter your course type
+          div
+            input(type='text', name='course type')
+            br
+            | Enter your course number
+            br
+            input(type='text', name='course number') 
+            br
+            | Enter your course section
+            br
+            input(type='text', name='course section')
+            br
+            input(type='submit', value='Add') 
+            br
+            a(href='/courses') Back to courses  
+         
+
+
+ 
+    include footer

@@ -1,0 +1,52 @@
+// our 'database'
+var items = {
+    COMP3004:{name:'Intro to OO software eng', code:'Comp 3004'},
+    COMP3005:{name:'DB management', code:'Comp 3005'},
+    COMP3007:{name:'Prog Para', code:'Comp 3007'},
+    COMP2406:{name:'Intro web fund', code:'Comp 2406'},
+    COMP3000:{name:'OS', code:'Comp 3000'}
+};
+
+// handler for homepage
+exports.home = function(req, res) {
+    // if user is not logged in, ask them to login
+    if (typeof req.session.username == 'undefined') res.render('home', { title: 'Team NYZ'});
+    // if user is logged in already, take them straight to the items list
+    else res.redirect('/courses');
+};
+
+// handler for form submitted from homepage
+exports.home_post_handler = function(req, res) {
+    // if the username is not submitted, give it a default of "Anonymous"
+    username = req.body.username || 'Anonymous';
+    school = req.body.school || 'No School Provided';
+    // store the username as a session variable
+    req.session.username = username;
+    // redirect the user to homepage
+    res.redirect('/');
+};
+
+// handler for displaying the items
+exports.items = function(req, res) {
+    // don't let nameless people view the items, redirect them back to the homepage
+    if (typeof req.session.username == 'undefined') res.redirect('/');
+    else res.render('courses', { title: 'Team NYZ- Courses', username: req.session.username, items:items });
+};
+
+// handler for displaying individual items
+exports.item = function(req, res) {
+    // don't let nameless people view the items, redirect them back to the homepage
+    if (typeof req.session.username == 'undefined') res.redirect('/');
+    else {
+        var name = items[req.params.id].name;
+        var code = items[req.params.id].code;
+        res.render('course', { title: 'Team NYZ- ' + name, username: req.session.username, name:name, code:code });
+    }
+};
+
+// handler for showing simple pages
+exports.page = function(req, res) {
+    var name = req.query.name;
+    var contents = {about: 'Developers for this project are Nick Mojsej - 100820777, Zhangda Yang - 100829088, Xingnan Zhou - 1008790968'};
+    res.render('page', { title: 'Team NYZ- ' + name, username: req.session.username, content:contents[name] });
+};

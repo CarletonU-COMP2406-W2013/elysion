@@ -1,0 +1,14 @@
+h1= title
+form( method="post")
+    div
+        div
+            span Title :
+            input(type="text", name="title", id="editArticleTitle")
+        div
+            span Body :
+            textarea( name="body", rows=20, id="editArticleBody)
+        div
+            span cc :
+            textarea( name="cc", rows=1, id="editArticlecc)
+        div#editArticleSubmit
+            input(type="submit", value="Send")

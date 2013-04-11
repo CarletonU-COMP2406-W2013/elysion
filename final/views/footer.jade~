@@ -1,0 +1,5 @@
+#footer
+  div Comp 2406 Group NYZ - Project #{+new Date().getFullYear()} 
+  a(href='/page?name=about') About Us 
+  | |  
+

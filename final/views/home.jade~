@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  #wrapper
+    #logo
+      a(href='/')
+        img(src='/images/test2.png')
+    #display
+      #login    
+        form(method='post')
+          | Enter your name to contribute to this Project
+          div
+            input(type='text', name='username')
+            br
+            | Enter your Password
+            br
+            input(type='text', name='password') 
+            | Enter your School Name
+            br
+            input(type='text', name='school')
+            br
+            input(type='submit', value='Log In')
+      
+    include footer
