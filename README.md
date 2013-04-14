@@ -1,6 +1,6 @@
-Other document is in doc file
+Other document is in docs file
 
-The Final document is in doc file
+The Final document is in docs file
 
 Dish order
 
