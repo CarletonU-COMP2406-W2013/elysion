@@ -22,7 +22,7 @@ docs/Dependencies.md
     "stylus": "*"
   }
 }
-doc/lib:
+doc/library:
 none
 
 docs/Architecture : in the document named picture, it is written in a pdf file
