@@ -1,0 +1,70 @@
+README.md 
+Project's Name: Dish Ordering System
+Group Name: Elysion
+Group Members: 
+Name: Xue Yang     Stdudent Number: 100808664 
+Name: Lianqi Ren   Stdudent Number: 100822043
+Name: Mengsha Zhao Stdudent Number: 100845861
+
+Online Dish ordering System is based on Web Fundamentals, and jQuery tracks. Our project is developed from browser to server with Node that is a highly scalable network applications on JavaScript-based platform. The system is going to be an online order website. Clients can use it to buy things from the internet, just like we order the pizza online. For this purpose, the system should support clients to know of what they want to buy, and then the server side will receive the request then process them. At the backend,the system provides website's administrator can manage the whole website such as changing text, images, adding dishes, amending their prices and more another functionality. Our project provides visitors an experience of visiting a restaurant on network, then openning a menu and ordering dishes by themselves. Finally, system generates a dish order list that including how many dishes you have ordered and their unit price and total amount you should pay. Of course, client will be asked to log in and register some information such as name, password, address where you want to send your ordering dishes, phone number etc.
+
+docs/Dependencies.md
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.1.0",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
+doc/lib:
+none
+
+docs/Files.md
+READ.md: it is to introduce our project and we are going to do in following weeks
+
+Milesstone1: it is an Architecture.
+
+Milesstone2: there is a clientside file in it and there are public, node_modules, routes, views files inside it.
+
+Milesstone3: there is server file in it and there is a server.js inside server file. This sever.js is tryed to connect the localhost:3000 and it is to make a service to users.
+
+Milesstone4:there is store file in it and there is store.js inside it. store.js is like a shopping chart to let users can add, deleter items they like and to make an order.
+
+Milesstone5: 
+
+Milesstone6: we want to add some pircture, but we actually don't do it.
+
+Milesstone7: it is about our first daft documtation
+
+Milesstone8: we want to some change for our doucumtation.
+In the future, we have app.js to connect all node.js.
+
+
+docs/Motivation.md 
+About our source of the idea, when we saw the theme "web application", the first thing appeared in our mind was the online shopping website.  It is very close to daily life, because young people like shopping online. 
+Our goal of this project is trying to create a basic online order website which is mainly work for the small fast food restaurant like pizza (our final code is Japanese Sushi Restaurant). Young people can easily use Dish Ordering System to order fast food online and enjoy their lunch or dinner at home. Also, this system can be instead those of  we used to order takeaway by a phone call. This means our system will help businesses not only save money to print advertising menu and to send these printed matters, but also save paper or wood of natual resources and update their menu easy and real time. Therefore, we expect it has practical applicability which means it can be widely accepted by both businesses and clients. 
+Those potential value of this project drives us to develop Dish Ordering System though it looks a very small system.
+Finally, we hope this website is friendly and convenient for users to operate.
+
+
+
+docs/Extensions.md 
+Dish Ordering System is a simple online order website and is modified a shopping cart website. We try to give every customer who visits our website could feel real restaurant. Thus, the following will be concentrate on interaction with customers. That will discuss what potential ways our application would be extended.  
+(1)types of items
+We can add three classes: latest products, hot-selling commodity, special offer. The type latest products is the new product come in the store, the hot-selling commodity is the most popular goods, namely best selling items and the special is we recommended goods or combination sales such as set of dish. At the field of the information of the items, display the name, types, comment, regular price and special price.
+(2)message board 
+the message board provide a ability to let customer have a communication platform. They can send any comments and questions to message board, or the administrator, then the administrator will give them reply and feedback. In addition, when  customers send their comments on dishes or one set of dishes, message board provides customes to see all opinions to share their experiences each other.
+(3)helping system
+the helping system provides the ability to help people understand the website's function and how to use it.
+(4)nutritional analysis system
+nutritional analysis system provides customers a suggestion when they have booked a lunch or dinner, the system will prompt their nutritional composition, to give advice whether it is a balanced nutritious lunch or dinner. Our existing design does not support this extension, but that is a significance of healthy diet. This extension could draw customers eyes and help businesses to promote sales.
+(5)positioning System
+the positioning system can help businesses in real time determine whether they could  accept an order through determing the location of the customer and estimating time of the delivery to be in need. Also this system can help customers find their near restaurant that could serve them as soon as possible. However, Our existing design does not support this extension. Since it is too difficult for us now to do this extension though it is useful.
+
+
